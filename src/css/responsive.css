@@ -1,4 +1,7 @@
 @media(max-width: 425px) {
+    body {
+        overflow: scroll;
+    }
     .container .content {
         margin: 50px 0;
     }
