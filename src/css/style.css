@@ -1,0 +1,116 @@
+.container .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 90px 0;
+}
+
+.container .content .title {
+    padding: 50px 0 10px;
+    font-size: 40px;
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+    text-align: center;
+}
+
+.container .content .title strong {
+    color: hsl(209, 33%, 12%);
+}
+
+.container .content .description {
+    font-size: 18px;
+}
+
+.container .content .input {
+    padding: 30px 0 80px;
+    display: flex;
+    gap: 10px;
+}
+
+.container .content .input .input-container .email {
+    font-family: 'Libre Franklin', sans-serif;
+    width: 350px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px hsl(223, 100%, 88%) solid;
+    padding: 20px;
+}
+
+.container .content .input .input-container .email::placeholder {
+    color: hsl(223, 100%, 88%);
+}
+
+.container .content .input .input-container .email:focus {
+    outline: none;
+}
+
+.container .content .input .btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border-style: none;
+    background-color: hsl(223, 87%, 63%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container .content .input .btn:hover {
+    opacity: 0.7;
+}
+
+.container .content .illustration {
+    width: 500px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer .icons {
+    display: flex;
+    gap: 20px;
+}
+
+.footer .icons .facebook,
+.footer .icons .x,
+.footer .icons .instagram {
+    border: 1px hsl(223, 100%, 88%) solid;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: hsl(223, 87%, 63%);
+    transition: 0.3s;
+}
+
+.footer .icons .facebook:hover,
+.footer .icons .x:hover,
+.footer .icons .instagram:hover {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(223, 87%, 63%);
+}
+
+.footer .copyright {
+    color: hsl(0, 0%, 59%);
+    font-size: 14px;
+}
+
+.container .input .input-container .error-msg {
+    color: hsl(354, 100%, 66%);
+    font-style: italic;
+    font-size: 13px;
+    padding: 5px 0 0 20px;
+}
+
+.container .content .input .input-container .email.error-input {
+    border: 1px hsl(354, 100%, 66%) solid;
+}
